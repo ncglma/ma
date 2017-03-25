@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Mi ma hermosa</title>
+  </head>
+  <body>
+    <h1>Mi ma hermosa</h1>
+
+    <p>Para descifrar el mensaje de este reto, dale clic derecho a cualquier parte del fondo blanco de esta página, y selecciona inspeccionar. Eso abrirá una ventanita que en la parte superior trae varias opciones. Selecciona la segunda, que debe decir "console" o "consola" y ahí encontrarás el resto de tu reto :D</p>
+
+    <script>
+    var c = 0, h = 0, m = 0, n = 0, texto = 0, a = 'te', b = 'quiero'
+    var te = 'Capitulo 2: Mi ma hermosa\n\nEste mensaje tiene como misión hablar del orgullo que representa para mi saber que tu eres mi ma. No creo que pueda describir en texto el gran orgullo que siento, pero lo intentaré:\n\nQue tu seas mi ma es algo único, irrepetible. Eres una mujer increible, hermosa, llena de cuidades y con una enorme calidad humana. Alguien que siempre está dispuesta a ayudar, alguien en quien siempre encuentro la palabra que necesito. Cuando tengo un problema, tu haces que sea mas facil sobrellevarlo. Cuando algo no sale bien, tu me ayudas a encontrar solución.\n\n'
+
+    var amo = 'Cuando el día es soleado, tu eres la sombra que hace mi vida mas tranquila. Cuando el día es oscuro tu eres el sol que alumbra mi vida. Cuando en el día hay tormenta, tu eres el paraguas que hace mi vida mas serena. Y cuando el día es un día común, tu eres la persona que lo convierte en un día inolvidable.\n\nTe has convertido en lo mejor que tengo en la vida. Un tesoro que no perderé jamas. Es inevitable no amarte tanto. Es inevitable no sentirme orgulloso cada vez que logras algo, cada vez que triunfas, cada vez que sonries. Y cada día que pasa, me haces sentirme mas y mas orgulloso de ti. Tu le has dado un vuelco a mi vida.\n\n'
+   var ma = 'Estoy orgulloso por quien eres,\nestoy orgulloso por como eres,\nestoy orgulloso de amarte,\nestoy orgulloso de que me ames,\nestoy orgulloso de tu forma de ser,\nestoy orgulloso de tu forma de pensar,\nestoy orgulloso de tu forma de actuar,\nestoy orgulloso de tu forma de amar,\nestoy orgulloso de tu forma de enfrentar los problemas,\nestoy orgulloso de tu forma de superar los obstaculos,\nestoy orgulloso de tu capacidad de sonreir por encima de las circunstancias,\nestoy orgulloso de tu felicidad,\nestoy orgulloso de que seas mi hermanita,\nESTOY ORGULLOSO DE TI.\nTe amo princesa.'
+
+   function seguir() {
+      console.log("Llegamos a la parte final de tu reto, y como lo resolviste correctamente, aqui va tu mensaje :D")
+      console.log("Ya conoces algunas nociones básicas de programación, espero que te haya gustado")
+      console.log("Tu mensaje está guardado en 3 variables, las variables se llaman: te, amo, y ma. Simplemente suma te + amo + ma, y podrás leer tu mensaje completico")
+   }
+
+   function variableTexto() {
+       var inter = setInterval(function () {
+        if (typeof texto === 'string') {
+          clearInterval(inter)
+          console.log("Super. Las cadenas de texto como la que acabas de crear, se llaman strings, y asi las llamaré en adelante")
+          console.log("Tambien puedes sumar strings. Si tienes un string a = 'te' y un string b = 'quiero', a + b imprimirá te quiero. Ya he guardado los valores en a y b, así que escribe a + b para que veas que funciona.")         
+          console.log("Una vez lo hayas hecho y veas el 'te quiero' en pantalla, escribe seguir() ")          
+
+
+        }
+      }, 1000)
+   }
+   
+   function variablen() {
+     var inter = setInterval(function () {
+        if (n == 13) {
+          clearInterval(inter)
+          console.log("Muy bien mi ma, estoy orgulloso de ti :$")
+          console.log("Hasta ahora solo hemos guardado numeros. Podemos guardar muchas otras cosas. Por ejemplo, texto. Por ejemplo, escribe esta instruccion (puedes cambiar el texto entre comillas): texto = 'Cualquier texto' ")
+          console.log("IMPORTANTE: Incluye las comillas simples en 'el texto que escribiste', de esa forma el lenguaje sabe que es un texto y no un número. ")
+          variableTexto()
+
+        }
+      }, 1000)
+   }
+
+    function variablem() {
+       var inter = setInterval(function () {
+        if (m == 9) {
+          clearInterval(inter)
+          console.log("Yeah, mis oompaloompas verificaron que m ya tiene guardado el valor de 9, muy bien :D")
+          console.log("Ahora debes saber que puedes reusar los valores de la variables. Ya viste que m = 4 + 5 funciona, y sabes que c = 5 y h = 8. Ahora intenta n = c + h y verás como eso le da el valor de 13 a n")
+          variablen()
+
+        }
+      }, 1000)
+  }
+
+
+    function variable8() {
+       var inter = setInterval(function () {
+        if (h == 8) {
+          clearInterval(inter)
+          console.log("wiiiii, entendiste como crear variables :D")
+          console.log("Ahora, debes saber que con las variables puedes guardar el resultado de operaciones: Por ejemplo hacer 'm = 4 + 5' lo cual guardará en m el valor 9. Intenta guardar en m 4 + 5 (puedes copiarlo de aqui, ya sabes, sin comillas)")
+          variablem()
+
+        }
+      }, 1000)
+    }
+    function variables2() {
+      console.log("Las variables, son campos para guardar información. Desde un simple número, hasta la información de tu cuenta en facebook, se carga en variables.")
+      console.log("Por ejemplo: 'c = 5' sin las comillas, significa que en la variable c almacenarás un 5. Justo aqui debajo, crea la variable c, y dale el valor 5 (puedes copiarlo y pegarlo de aqui, pero ojo, sin las comillas)")
+      console.log("Cuando lo hagas correctamente, tendrás una nueva indicación")
+      var inter = setInterval(function () {
+        if (c == 5) {
+          clearInterval(inter)
+          console.log("Excelente mi ma, has creado tu primera variable :D")
+          console.log("Solo una prueba mas para ver que entendiste. Crea la variable h y guardale el valor 8")
+          console.log("Cuando lo hagas correctamente, tendrás una nueva indicación")
+          variable8()
+        }
+      }, 1000)
+    }
+
+
+    function continuar () {
+      var a = confirm("Entendiste como se manejan los números como calculadora? Si es así, acepta este mensaje. Si no, cancelalo y volvemos a empezar")
+      alert("Ahora, vuelve a mirar la consola")   
+      if(a) {
+        variables2()
+      } else {
+        suma()
+      }
+    }
+
+    function variables() {
+      console.log("¡EXCELENTE mi ma! Ahora que ya sabes manejar números, es hora de conocer las variables.")
+      console.log("Recuerdas como se llama una función? Como hiciste con la función empezar: Escribiste el nombre de la función, y luego colocaste () seguido de enter. Llama ahora a la función continuar. ¿Como sería? No importa si te equivocas, puedes intentar cuantas veces quieras")
+    }
+
+    function suma () {
+      console.log("Programar es en gran parte crear modelos matemáticos. Por eso, como te imaginarás, facilmente puedes usar la consola como una calculadora. Prueba escribiendo debajo 3 + 4 y dando enter. Lo mismo con 4 * 5 o 7 * 8. Incluso con parentesis para operaciones mas largas: ((23 * 4) + 9). Realiza todas las pruebas que quieras, y en exactamente 40 segundos tendrás una nueva indicación aqui")
+      setTimeout(function(){
+        variables()
+      }, 40000)
+    }
+
+
+    function empezar () {
+      var a = confirm("Al escribir empezar(), has llamado a una función que muestra esta alerta. ¡Tu primera linea de programación!. Acepta este aviso para seguir");
+      if(!a) {
+        console.log("Ey, debias aceptar el mensaje. Volvamos a intentarlo :D")
+        empezar()
+      } else {
+        alert("Muy bien! Ahora vuelve a mirar la consola y seguimos el curso ahí")
+        suma()
+      }
+    }
+
+    console.log("Bienvenida a tu clase de programación personalizada :D ")
+    console.log("Capitulo 2: Programando con Ma")
+    console.log("Escribe justo aqui debajo empezar() con todo y parentesis y dale enter")
+
+</script>
+  </body>
+</html>
